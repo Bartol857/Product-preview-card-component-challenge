@@ -1,0 +1,117 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(30deg, 38%, 92%);
+  font-size: 14px;
+}
+
+main .box {
+  margin: 25px auto;
+  width: 90%;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 8px;
+  overflow: hidden;
+}
+main .box__img .img-desktop {
+  display: none;
+}
+main .box__img img {
+  width: 100%;
+  height: auto;
+}
+main .box__info {
+  padding: 22px;
+}
+main .box__category {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: hsl(228deg, 12%, 48%);
+}
+main .box__name {
+  margin: 10px 0;
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  color: hsl(212deg, 21%, 14%);
+}
+main .box__description {
+  color: hsl(228deg, 12%, 48%);
+  line-height: 25px;
+}
+main .box__price {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+main .box__price p {
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  color: hsl(158deg, 36%, 37%);
+}
+main .box__price span {
+  margin-left: 15px;
+  text-decoration: line-through;
+  color: hsl(228deg, 12%, 48%);
+}
+main .box__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  width: 100%;
+  background-color: hsl(158deg, 36%, 37%);
+  font-family: "Montserrat", sans-serif;
+  color: hsl(0deg, 0%, 100%);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+main .box__btn img {
+  margin-right: 10px;
+}
+main .box__btn:hover {
+  background-color: hsl(156deg, 42%, 18%);
+}
+
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+footer .attribution a {
+  color: hsl(158deg, 36%, 37%);
+}
+
+@media (min-width: 768px) {
+  main .box {
+    margin: 50px auto;
+    width: 80%;
+  }
+}
+@media (min-width: 992px) {
+  main .box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 150px auto;
+    width: 60%;
+    max-height: 450px;
+  }
+  main .box__img .img-mobile {
+    display: none;
+  }
+  main .box__img .img-desktop {
+    display: block;
+  }
+}
+@media (min-width: 1400px) {
+  main .box {
+    width: 40%;
+    max-height: 450px;
+  }
+}/*# sourceMappingURL=main.css.map */

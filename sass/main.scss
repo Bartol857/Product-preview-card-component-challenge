@@ -1,0 +1,112 @@
+@use './colors' as *;
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: $cream;
+	font-size: 14px;
+}
+
+main {
+
+	.box {
+		margin: 25px auto;
+		width: 90%;
+		background-color: $white;
+		border-radius: 8px;
+		overflow: hidden;
+
+		&__img {
+            .img-desktop{
+                display: none;
+            }
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		&__info {
+			padding: 22px;
+		}
+
+		&__category {
+			font-size: 12px;
+			text-transform: uppercase;
+			letter-spacing: 4px;
+			color: $darkgrayishblue;
+		}
+
+		&__name {
+            margin: 10px 0;
+			font-family: 'Fraunces', serif;
+			font-size: 32px;
+			color: $verydarkblue;
+		}
+
+		&__description {
+			color: $darkgrayishblue;
+			line-height: 25px;
+		}
+
+		&__price {
+			display: flex;
+			align-items: center;
+            margin: 20px 0;
+
+			p {
+				font-family: 'Fraunces', serif;
+				font-size: 32px;
+				color: $darkcyan;
+			}
+
+			span {
+				margin-left: 15px;
+				text-decoration: line-through;
+				color: $darkgrayishblue;
+			}
+		}
+
+		&__btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+			padding: 15px;
+			width: 100%;
+			background-color: $darkcyan;
+            font-family: 'Montserrat', sans-serif;
+            color: $white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+
+            img {
+                margin-right: 10px;
+            }
+		}
+
+        &__btn:hover {
+            background-color: $verydarkcyan;
+        }
+	}
+}
+
+footer {
+	.attribution {
+		font-size: 11px;
+		text-align: center;
+	}
+
+	.attribution a {
+		color: $darkcyan;
+	}
+}
+
+@import './desktop';
